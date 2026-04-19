@@ -45,9 +45,7 @@ public class Player
 
     public void Move(int diffX, int diffY)
     {
-        Vector2 targetPosition = new Vector2();
-        targetPosition.x = position.x + diffX;
-        targetPosition.y = position.y + diffY;
+        Vector2 targetPosition = new Vector2(position.x + diffX, position.y + diffY);
         
         if (targetPosition.x >= 0 && targetPosition.x < Console.BufferWidth)
         {
